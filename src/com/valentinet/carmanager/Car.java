@@ -7,6 +7,7 @@ public class Car {
 	int weigth;
 	Color color;
 	private double distance = 0;
+	protected double distanceOnService = 0;
 
 	public Car(String modelName, int yearOfProd, int price, int weigth, Color string) {
 		this.modelName = modelName;
@@ -15,6 +16,7 @@ public class Car {
 		this.weigth = weigth;
 		this.color = string;
 	}
+
 // Distance integer
 	public void addDistance(int additionalDistance) {
 
@@ -22,7 +24,10 @@ public class Car {
 			additionalDistance = 0;
 		}
 		distance += additionalDistance;
+		distanceOnService += additionalDistance;
+
 	}
+
 //Distance double 
 	public void addDistance(double additionalDistance) {
 
@@ -31,9 +36,22 @@ public class Car {
 		}
 
 		distance += additionalDistance;
+		distanceOnService += additionalDistance;
 
 	}
 
+// Service reset
+	public void serviceReset() {
+
+		distanceOnService = 0;
+	}
+
+// Distance to service
+	public double getDistanceOnService() {
+		return distanceOnService;
+	}
+
+// Global distance
 	public double getDistance() {
 		return distance;
 	}
@@ -41,7 +59,8 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Car [modelName = " + modelName + ", yearOfProd = " + yearOfProd + ", price = " + price + ", weigth = "
-				+ weigth + ", color = " + color + ", distance = " + distance + "]";
+				+ weigth + ", color = " + color + ", distance = " + distance + ", distanceOnService = "
+				+ distanceOnService + "]";
 	}
 
 //	@Override
