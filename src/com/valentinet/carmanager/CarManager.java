@@ -1,4 +1,4 @@
-package ua.com.foxminded.carmanager;
+package com.valentinet.carmanager;
 
 public class CarManager {
 
@@ -9,6 +9,8 @@ public class CarManager {
 		Car lagunaRenault = new Car("Renault Lagna", 9700, 2000, 1600, Color.WHITE);
 		Car lagunaRenault2 = new Car("Renault Lagna", 9700, 2000, 1600, Color.WHITE);
 
+		
+		
 		
 		priusToyota.addDistance(1000);
 		priusToyota.addDistance(15000);

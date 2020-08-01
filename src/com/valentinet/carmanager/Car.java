@@ -1,4 +1,4 @@
-package ua.com.foxminded.carmanager;
+package com.valentinet.carmanager;
 
 public class Car {
 	String modelName;
@@ -15,22 +15,23 @@ public class Car {
 		this.weigth = weigth;
 		this.color = string;
 	}
-
+// Distance integer
 	public void addDistance(int additionalDistance) {
-		
+
 		if (additionalDistance < 0) {
 			additionalDistance = 0;
-		} 
+		}
 		distance += additionalDistance;
 	}
+//Distance double 
 	public void addDistance(double additionalDistance) {
-		
+
 		if (additionalDistance < 0) {
 			additionalDistance = 0;
-		} 
-		
+		}
+
 		distance += additionalDistance;
-		
+
 	}
 
 	public double getDistance() {

@@ -1,4 +1,4 @@
-package ua.com.foxminded.carmanager;
+package com.valentinet.carmanager;
 
 public enum Color {
 	WHITE, GREEN, BLACK, BLUE, SILVER, RED;
@@ -7,9 +7,7 @@ public enum Color {
     public String toString() {
         return name().toLowerCase();
 }
-//	String toLowerCase() 
-//	{toString
-//      return name().toLowerCase();
-//}
-	
+//	public String toPrettyString() {
+//		return this.toString().toLowerCase();
+//		}
 }
