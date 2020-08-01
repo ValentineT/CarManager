@@ -1,6 +1,6 @@
 package com.valentinet.carmanager;
 
-public class Car {
+public abstract class Car implements Serviceable{
 	String modelName;
 	int yearOfProd;
 	int price;
@@ -40,6 +40,8 @@ public class Car {
 
 	}
 
+
+
 // Service reset
 	public void serviceReset() {
 
@@ -51,6 +53,8 @@ public class Car {
 		return distanceOnService;
 	}
 
+	
+	
 // Global distance
 	public double getDistance() {
 		return distance;
